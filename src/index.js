@@ -1,17 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDom from "react-dom";
+import JokesApp from "./JokesApp";
+import product from "./map-Product";
+import App from "./App";
+import AppProject from "./AppProject";
+import AppE from "./Class_based_components";
+import AppState1 from "./state1";
+import AppState2 from "./state2";
+import Joke from "./Joke";
+import AppProjectMeme from "./AppProjectMeme";
+import AppNavbar from "./AppNavbar";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDom.render(<AppNavbar />, document.getElementById("root"));
