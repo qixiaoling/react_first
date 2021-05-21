@@ -11,7 +11,7 @@ import Joke from "./Joke";
 import AppProjectMeme from "./AppProjectMeme";
 import AppNavbar from "./AppNavbar";
 import reportWebVitals from './WeatherApp/reportWebVitals';
-import AppWeather from './WeatherApp/AppWeather';
-import App from './HandbagApp/App';
+import App from './WeatherApp/App';
+
 
 ReactDom.render(<App />, document.getElementById("root"));
