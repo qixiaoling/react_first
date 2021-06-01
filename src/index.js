@@ -16,5 +16,7 @@ import ClickOne from "./Exercise/ClickOne";
 import TodoApp from "./Exercise/Todo/TodoApp";
 import WordDisplayLogInOut from "./Exercise/WordDisplayLogInOut";
 import VSchoolApp from "./Exercise/VschoolProduct/VSchoolApp"
+import ConditionApp from "./Exercise/ConditionalRendering/ConditionApp";
+import Condition2App from "./Exercise/Condition2/Condition2App";
 
-ReactDom.render(<VSchoolApp />, document.getElementById("root"));
+ReactDom.render(<Condition2App />, document.getElementById("root"));
