@@ -15,6 +15,6 @@ import App from './WeatherApp/App';
 import ClickOne from "./Exercise/ClickOne";
 import TodoApp from "./Exercise/Todo/TodoApp";
 import WordDisplayLogInOut from "./Exercise/WordDisplayLogInOut";
+import VSchoolApp from "./Exercise/VschoolProduct/VSchoolApp"
 
-
-ReactDom.render(<WordDisplayLogInOut />, document.getElementById("root"));
+ReactDom.render(<VSchoolApp />, document.getElementById("root"));
