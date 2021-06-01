@@ -12,6 +12,8 @@ import AppProjectMeme from "./AppProjectMeme";
 import AppNavbar from "./AppNavbar";
 import reportWebVitals from './WeatherApp/reportWebVitals';
 import App from './WeatherApp/App';
+import ClickOne from "./Exercise/ClickOne";
+import TodoApp from "./Exercise/Todo/TodoApp";
 
 
-ReactDom.render(<App />, document.getElementById("root"));
+ReactDom.render(<TodoApp />, document.getElementById("root"));
