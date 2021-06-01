@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const TodoItems = ({text, completed} ) =>{
+const TodoItems = ({id, text, completed, handleClick} ) =>{
 
     return(
 
@@ -10,6 +10,7 @@ const TodoItems = ({text, completed} ) =>{
                    id={{text}}
                    name={{text}}
                    checked={completed}
+                   onClick={()=>{handleClick(id)}}
             />
                 {text}
             </label>
