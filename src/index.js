@@ -19,4 +19,8 @@ import VSchoolApp from "./Exercise/VschoolProduct/VSchoolApp"
 import ConditionApp from "./Exercise/ConditionalRendering/ConditionApp";
 import Condition2App from "./Exercise/Condition2/Condition2App";
 import LogInOutAdvanced from "./Exercise/LoginAdvanced/LogInOutAdvanced";
-ReactDom.render(<LogInOutAdvanced />, document.getElementById("root"));
+import FetchData from "./Exercise/FetchData";
+
+
+
+ReactDom.render(<FetchData />, document.getElementById("root"));
