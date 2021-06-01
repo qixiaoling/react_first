@@ -14,6 +14,7 @@ import reportWebVitals from './WeatherApp/reportWebVitals';
 import App from './WeatherApp/App';
 import ClickOne from "./Exercise/ClickOne";
 import TodoApp from "./Exercise/Todo/TodoApp";
+import WordDisplayLogInOut from "./Exercise/WordDisplayLogInOut";
 
 
-ReactDom.render(<TodoApp />, document.getElementById("root"));
+ReactDom.render(<WordDisplayLogInOut />, document.getElementById("root"));
