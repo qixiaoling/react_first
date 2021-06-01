@@ -18,5 +18,5 @@ import WordDisplayLogInOut from "./Exercise/WordDisplayLogInOut";
 import VSchoolApp from "./Exercise/VschoolProduct/VSchoolApp"
 import ConditionApp from "./Exercise/ConditionalRendering/ConditionApp";
 import Condition2App from "./Exercise/Condition2/Condition2App";
-
-ReactDom.render(<Condition2App />, document.getElementById("root"));
+import LogInOutAdvanced from "./Exercise/LoginAdvanced/LogInOutAdvanced";
+ReactDom.render(<LogInOutAdvanced />, document.getElementById("root"));
