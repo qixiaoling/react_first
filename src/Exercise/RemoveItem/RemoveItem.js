@@ -12,13 +12,19 @@ function RemoveItem() {
 
     return (
         <div>
-            {items.map((item) => {
-                return (
-                    <Item key={item.id} {...item}
-                               handleClick={handleClick}/>
-                )
-            })}
+            <div>
+                {items.map((item) => {
+                    return (
+                        <Item key={item.id} {...item}
+                              handleClick={handleClick}/>
+                    )
+                })}
+            </div>
+            <div>
+                <button onClick={()=>setItems([])}>reset all</button>
+            </div>
         </div>
+
     )
 
 
