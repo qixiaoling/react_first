@@ -39,3 +39,7 @@ input[type=checkbox]{
 input[type=checkbox]:focus{
     outline:0;
 }
+.removeItem-container {
+    width: 50%;
+    height: 30px;
+}

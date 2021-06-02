@@ -20,7 +20,8 @@ import ConditionApp from "./Exercise/ConditionalRendering/ConditionApp";
 import Condition2App from "./Exercise/Condition2/Condition2App";
 import LogInOutAdvanced from "./Exercise/LoginAdvanced/LogInOutAdvanced";
 import FetchData from "./Exercise/FetchData";
+import ChangeTitle from "./Exercise/ChangeTitle";
+import RemoveItem from "./Exercise/RemoveItem/RemoveItem";
 
 
-
-ReactDom.render(<FetchData />, document.getElementById("root"));
+ReactDom.render(<RemoveItem />, document.getElementById("root"));
