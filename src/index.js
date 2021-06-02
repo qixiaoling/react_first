@@ -23,5 +23,9 @@ import FetchData from "./Exercise/FetchData";
 import ChangeTitle from "./Exercise/ChangeTitle";
 import RemoveItem from "./Exercise/RemoveItem/RemoveItem";
 import Object_People from "./Exercise/Object_People";
+import SimpleCounter from "./Exercise/SimpleCounter";
+import DelayCounter from "./Exercise/DelayCounter";
+import UseEffect_Basic from "./Exercise/UseEffect_Basic";
+import UseEffect_CleanUp from "./Exercise/UseEffect_CleanUp";
 
-ReactDom.render(<Object_People />, document.getElementById("root"));
+ReactDom.render(<UseEffect_CleanUp />, document.getElementById("root"));
