@@ -22,6 +22,6 @@ import LogInOutAdvanced from "./Exercise/LoginAdvanced/LogInOutAdvanced";
 import FetchData from "./Exercise/FetchData";
 import ChangeTitle from "./Exercise/ChangeTitle";
 import RemoveItem from "./Exercise/RemoveItem/RemoveItem";
+import Object_People from "./Exercise/Object_People";
 
-
-ReactDom.render(<RemoveItem />, document.getElementById("root"));
+ReactDom.render(<Object_People />, document.getElementById("root"));
