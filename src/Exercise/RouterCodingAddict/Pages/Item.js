@@ -21,6 +21,7 @@ function Item(){
             <h1>{name}</h1>
             <p>{comp}</p>
             <Link to="/products">back to products</Link>
+            //css issue
         </>
     )
 }

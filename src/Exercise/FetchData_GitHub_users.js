@@ -7,11 +7,14 @@ function FetchData_GitHub_users() {
     async function FetchData() {
         try {
             const result = await axios.get("https://api.github.com/users")
-            setUsers(result)
+            console.log(result.data)
+            setUsers(result.data)
+
         } catch (error) {
             console.log("error")
         }
     }
+
 
     useEffect(() => {
         FetchData();

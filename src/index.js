@@ -33,5 +33,5 @@ import RouterReinApp from "./Exercise/RouterRein/RouterReinApp";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDom.render(
-    <RouterReinApp/>,
+    <RouterApp/>,
     document.getElementById("root"));
