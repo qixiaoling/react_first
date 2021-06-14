@@ -12,16 +12,20 @@ const apiKey = 'b7ae113310db05940950e41fd1692a30';
 function App() {
     const [weatherData, setWeatherData] = useState(null);
     const [location, setLocation] = useState('');
+    const [error, setError] = useState(false)
 
     useEffect(() => {
 
         async function fetchData() {
+            setError(false);
+
             try {
                 const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location},nl&appid=${apiKey}&lang=nl`);
                 setWeatherData(result.data);
                 console.log(result.data);
             } catch (e) {
                 console.error(e);
+                setError(true);
             }
         }
 
@@ -41,7 +45,11 @@ function App() {
                 {/*HEADER -------------------- */}
                 <div className="weather-header">
                     <SearchBar setLocationHandler={setLocation}/>
-
+                    {error &&(
+                        <span className='wrong-location-error'>
+                            Oops! Deze locatie bestaat niet
+                        </span>
+                    )}
                     <span className="location-details">
                      {weatherData &&
                          <>
