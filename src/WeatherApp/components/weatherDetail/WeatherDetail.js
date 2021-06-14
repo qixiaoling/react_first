@@ -1,5 +1,7 @@
 import React from 'react';
 import './WeatherDetail.css';
+import {useContext} from 'react'
+import {TempContext} from "../../context/TempProvider";
 
 function WeatherDetail() {
   return (

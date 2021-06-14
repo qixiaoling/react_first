@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
+import {TempContext} from '../../context/TempProvider'
 import './ForecastTab.css';
 import axios from "axios";
+
 
 const apiKey = 'b7ae113310db05940950e41fd1692a30';
 
 function ForecastTab({coordinates}) {
+    const{kelvinToMetric} = useContext(TempContext)
     const [forecasts, setForecasts] = useState(null);
 
     function createDateString(timestamp){
@@ -41,7 +44,7 @@ function ForecastTab({coordinates}) {
 
                         <section className="forecast-weather">
                             <span>
-                              {forecast.temp.day}
+                              {kelvinToMetric(forecast.temp.day)}
                             </span>
                             <span className="weather-description">
                                 {forecast.weather[0].description}

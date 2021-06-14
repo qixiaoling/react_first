@@ -31,7 +31,16 @@ import FetchData_GitHub_users from "./Exercise/FetchData_GitHub_users";
 import RouterApp from "./Exercise/RouterCodingAddict/RouterApp";
 import RouterReinApp from "./Exercise/RouterRein/RouterReinApp";
 import { BrowserRouter as Router } from "react-router-dom";
+import TempContextProvider from "./WeatherApp/context/TempProvider";
 
 ReactDom.render(
-    <RouterApp/>,
+    <React.StrictMode>
+        <TempContextProvider>
+            {/*this is only for learning useContext with WeatherApp. */}
+            {/*currently it has errors due to this nested layout. but other app should work by */}
+            {/*deleting the <TempContextProvider></TempContextProvider>*/}
+            <App/>
+        </TempContextProvider>
+    </React.StrictMode>,
+
     document.getElementById("root"));
